@@ -1,0 +1,216 @@
+/* General Styles
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .service video:hover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 70%;
+    z-index: 99;
+    object-fit: contain;
+  }
+  
+  /* Main Component Styles */
+  
+  /*.main-component {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .banner {
+    background-color: #f5f5f5;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .banner h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+  
+  .services {
+    background-color: #fff;
+    padding: 40px;
+  }
+  
+  .services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .services-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .service {
+    width: 33.33%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .service-images {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .service-images img {
+    margin-right: 10px;
+  }
+  
+  .service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .service p {
+    font-size: 18px;
+  }
+  
+  /* Media Queries */
+  
+ /* @media screen and (max-width: 1200px) {
+    .main-component {
+      max-width: 1000px;
+      padding: 20px 40px;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .main-component {
+      max-width: 800px;
+      padding: 20px 30px;
+    }
+    
+    .banner h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    
+    .services h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+    
+    .service {
+      width: 50%;
+      padding: 20px 10px;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .main-component {
+      max-width: 380px;
+      padding: 20px 20px;
+    }
+    .service video{
+      display: block;
+      width: 90%;
+      height: auto;
+      position: relative;
+      opacity: 100%;
+      /* margin-left: 150px; */
+      /* margin-top: 200px; */
+    
+    /*.banner h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    
+    .services h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    
+    .service {
+      width: 100%;
+      padding: 20px 0;
+    }
+  }
+   */
+   .main-component {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .service {
+    position: relative;
+    margin-bottom: 2rem;
+    width: calc(33.33% - 1rem);
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .service {
+      width: calc(50% - 1rem);
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .service {
+      width: 100%;
+    }
+  }
+  
+  .service img {
+    width: 100%;
+  }
+  
+  .service h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .service p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .service video {
+    display: block;
+    width: 100%;
+  }
+  
+  .service video.video-hover {
+    animation: play 2s linear infinite;
+  }
+  
+  @keyframes play {
+    0% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  

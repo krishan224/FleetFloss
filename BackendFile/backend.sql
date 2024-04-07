@@ -1,0 +1,11 @@
+CREATE TABLE orders (
+  id INT NOT NULL AUTO_INCREMENT,
+  customer_name VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  phone_number VARCHAR(20) NOT NULL,
+  shoe_type VARCHAR(255) NOT NULL,
+  cleaning_type VARCHAR(255) NOT NULL,
+  instructions TEXT NOT NULL,
+  order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (id)
+);
