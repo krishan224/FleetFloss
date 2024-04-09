@@ -1,4 +1,6 @@
 import React from 'react';
+import {  FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaXTwitter } from "react-icons/fa6";
 import './Footer.css';
 
 function Footer() {
@@ -26,10 +28,11 @@ function Footer() {
           </div>
           <div className="underComponent">
             <h3 className="footer__heading">Follow Us</h3>
-            <ul className="footer__list footer__list--social">
-              <li><a href="/" className="footer__social-link footer__social-link--facebook"><i className="fab fa-facebook-f"></i></a></li>
-              <li><a href="/" className="footer__social-link footer__social-link--twitter"><i className="fab fa-twitter"></i></a></li>
-              <li><a href="/" className="footer__social-link footer__social-link--instagram"><i className="fab fa-instagram"></i></a></li>
+            <ul className="footer__list list--social">
+            <li><a className="facebook" href="https://facebook.com/visacon"><FaFacebook /></a></li>
+              <li><a className='Xtwitter' href="https://twitter.com/visacon"><FaXTwitter /></a></li>
+              <li><a className='linkedin' href='https://linkedin.com'><FaLinkedin /></a></li>
+              <li><a className='instagram' href="https://instagram.com/visacon"><FaInstagram /></a></li>
             </ul>
           </div>
           <div className="underComponent">

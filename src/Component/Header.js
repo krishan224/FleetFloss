@@ -23,16 +23,16 @@ const Header = () => {
             <Link to="/" className="navbar-link" onClick={toggleMenu}>
               Home
             </Link>
-            <Link to="/about" className="navbar-link" onClick={toggleMenu}>
-              About Us
+            <Link to="/aboutUs" className="navbar-link" onClick={toggleMenu}>
+              About
             </Link>
-            <Link to="/contact" className="navbar-link" onClick={toggleMenu}>
+            <Link to="/contacts" className="navbar-link" onClick={toggleMenu}>
               Contact Us
             </Link>
-            <Link to="/services" className="navbar-link" onClick={toggleMenu}>
-              Services
+            <Link to="/Faq" className="navbar-link" onClick={toggleMenu}>
+              Faq
             </Link>
-            <Link to="/services" className="navbar-link" onClick={toggleMenu}>
+            <Link to="/placeOrder" className="navbar-link" onClick={toggleMenu}>
               Place Order
             </Link>
           </div>

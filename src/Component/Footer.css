@@ -1,89 +1,41 @@
-/* Mobile styles */
-*{
-  box-sizing: border-box;
+.footer{
+  display: grid;
+  justify-content: center;
+  position: absolute;
+  gap: 2rem;
+  height: fit-content;
+  padding-top: 3rem;
+  z-index:  -2;
+  overflow: hidden;
+  width: 100%;
+  background-color: #827b7b;
+
 }
-.footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; 
-    justify-content: center;
-    align-items: center;
-    background-color: #333;
-    height: auto;
-    width: 100%;
-    color: #fff;
-    padding: 20px;
-    font-size: 14px;
-    text-align: center;
-  }
-  .container{
-    display: flex;
-    flex-direction: row;
-  }
+.underComponent{
+  margin-bottom: 3rem;
+  color: rgb(176, 216, 212);
+}
+
+.footer__heading{
+  margin-left: -20% !important;  
   
-  .underComponent {
-    /* display:block; */
-    flex: 1;
-    margin-bottom: 20px;
-    max-width: 220px;
-  }
-  
-  .footer__heading {
-    display: flex;
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .footer__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .footer__link {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .footer__social-link {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #fff;
-    color: #333;
-    font-size: 20px;
-    line-height: 40px;
-    text-align: center;
-    margin-right: 10px;
-  }
-  
-  /* Tablet styles */
-  @media (min-width: 768px) {
-    .underComponent {
-      width: 25%;
-      margin-bottom: 0;
-      padding: 0 20px;
-    }
-  }
-  
-  /* Desktop styles */
-  @media (min-width: 1200px) {
-    .footer {
-      font-size: 16px;
-      display: flex;
-      flex-direction: row;
-    }
-  
-    .footer__heading {
-      font-size: 20px;
-    }
-  
-    .underComponent {
-      width: 25%;
-      margin-bottom: 0;
-      flex: 1;
-      padding: 0 20px;
-    }
-  }
-  
+}
+.footer__link{
+  color: rgb(197, 198, 179);
+}
+.facebook{
+ color:blue;
+  font-size: 1.6rem;
+}
+.Xtwitter{
+  color: #312b2b;
+  font-size: 1.5rem;
+}
+.linkedin{
+  color: skyblue;
+  font-size: 1.6rem;
+}
+.instagram{
+  color: rgb(137, 42, 42);
+  font-size: 1.6rem;
+}
