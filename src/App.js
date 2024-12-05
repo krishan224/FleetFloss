@@ -20,7 +20,8 @@ const Header = () => {
             <img src={logo} alt="Shoe Cleaning Co." />
           </Link>
           <div className={`navbar-links ${showMenu ? "active" : ""}`}>
-            <Link to="/" className="navbar-link" onClick={toggleMenu}>
+            <Link to="
+            Layout" className="navbar-link" onClick={toggleMenu}>
               Home
             </Link>
             <Link to="/aboutUs" className="navbar-link" onClick={toggleMenu}>
@@ -28,6 +29,9 @@ const Header = () => {
             </Link>
             <Link to="/contacts" className="navbar-link" onClick={toggleMenu}>
               Contact Us
+            </Link> 
+            <Link to= "/Testimonial" className="navbar-link" onClick={toggleMenu}>
+              Testimonials
             </Link>
             <Link to="/Faq" className="navbar-link" onClick={toggleMenu}>
               Faq
