@@ -1,98 +1,118 @@
-about-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    background-color: #f8f8f8;
-    }
-    
-    .about-container h1 {
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    text-align: center;
-    color: #333;
-    }
-    
-    .about-container p {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    line-height: 1.5;
-    text-align: center;
-    color: #555;
-    }
-    
-    @media screen and (min-width: 768px) {
-    .about-container {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4rem 8rem;
-    }
-    
-    .about-container h1 {
-    font-size: 4rem;
-    margin-bottom: 0;
-    text-align: left;
-    color: #333;
-    }
-    
-    .about-container p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    text-align: left;
-    color: #555;
-    }
-    
-    .about-container .image-container {
-    flex: 1;
-    margin-right: 2rem;
-    }
-    
-    .about-container .image-container img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    }
-    }
-    
-    @media screen and (min-width: 1024px) {
-    .about-container h1 {
-    font-size: 5rem;
-    }
-    
-    .about-container p {
-    font-size: 1.75rem;
-    margin-bottom: 2rem;
-    }
-    }
-    /* AboutUs.css */
+/* AboutUs.css */
+.about-container {
+  margin-top: 10px;
+  font-family: 'Arial', sans-serif;
+  padding: 2rem;
+  text-align: center;
+  opacity: 0; /* Hidden initially */
+  animation: fadeIn 1s forwards 0.5s; /* Fade in effect */
+}
 
-/* Media queries for responsive design */
-@media only screen and (max-width: 768px) {
-    .about-container {
-      padding: 20px;
-    }
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  animation: flowText 1.5s ease-out forwards; /* Text flowing effect */
+}
+
+.image-container {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  opacity: 0; /* Hidden initially */
+  animation: slideFromLeft 1.5s ease-out forwards 0.3s; /* Left-right slide animation */
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  opacity: 0; /* Hidden initially */
+  animation: flowText 1.5s ease-out forwards 0.8s; /* Delayed text animation */
+}
+
+/* Animation Definitions */
+
+/* Fade in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  
-  */
-  .image-container {
-    width: 100%;
-    padding: 20px;
+  100% {
+    opacity: 1;
   }
-  
+}
+
+/* Flowing text animation */
+@keyframes flowText {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Left to right slide animation */
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .about-container {
+    padding: 1.5rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  .content p {
+    font-size: 1rem;
+  }
+  .image-container img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container {
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+  .content p {
+    font-size: 0.95rem;
+  }
   .image-container img {
     max-width: 100%;
-    height: auto;
   }
-  
-  .about-container h1 {
-    font-size: 3rem;
-    margin-bottom: 30px;
-  }
-  
-  .about-container p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-  }
-  
+}

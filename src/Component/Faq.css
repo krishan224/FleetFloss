@@ -1,66 +1,112 @@
+/* Faq.css */
 .faq-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 30px;
+  
+  width: 100%;
+  /* max-width: 900px; */
+  padding: 100px;
+  background-color: #f7f7f7;
 }
-h2{
-  margin-left: 10px;
+
+
+.faq-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
 }
+.faq-list{
+  margin-top: 100px;
+}
+.faq-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.faq-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.faq-card:hover {
+  transform: translateY(-5px);
+}
+
 .faq-question {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f2f2f2;
-  border: none;
-  padding: 20px;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 600;
+  gap: 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
+  color: #333;
 }
 
 .faq-question:hover {
-  background-color: #e6e6e6;
-}
-
-.faq-question::after {
-  content: "\25B8";
-  font-size: 16px;
-  color: #333;
-  transform: rotate(90deg);
-  transition: transform 0.3s ease;
-}
-
-.faq-question.active::after {
-  transform: rotate(-90deg);
+  color: #007bff;
 }
 
 .faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-}
-
-.faq-answer p {
-  margin: 0;
-  padding: 20px;
-  font-size: 16px;
-  line-height: 1.4;
+  display: none;
+  padding-top: 1rem;
+  font-size: 1rem;
+  color: #555;
 }
 
 .faq-answer.active {
-  max-height: 1000px;
+  display: block;
 }
 
-@media only screen and (max-width: 768px) {
-  .faq-question {
-    font-size: 16px;
-    padding: 15px;
+.faq-icon {
+  font-size: 1.4rem;
+  color: #007bff;
+  transition: transform 0.3s ease;
+}
+
+.faq-question.active .faq-icon {
+  transform: rotate(180deg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .faq-title {
+    font-size: 1.8rem;
   }
-  
-  .faq-answer p {
-    font-size: 14px;
-    padding: 10px;
+
+  .faq-card {
+    padding: 1.2rem;
+  }
+
+  .faq-question {
+    font-size: 1rem;
+  }
+
+  .faq-answer {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-title {
+    font-size: 1.6rem;
+  }
+
+  .faq-card {
+    padding: 1rem;
+  }
+
+  .faq-question {
+    font-size: 0.9rem;
+  }
+
+  .faq-answer {
+    font-size: 0.9rem;
   }
 }

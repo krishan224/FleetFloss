@@ -16,10 +16,10 @@ const Header = () => {
     <header className="header">
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="Layout" className="navbar-logo">
+          <Link to="/" className="navbar-logo">
             <img src={logo} alt="Shoe Cleaning Co." />
           </Link>
-          <div className={`navbar-links ${showMenu ? "active" : ""}`}>
+          <div className={`navbar-links ${showMenu ? "active" : "X"}`}>
             <Link to="MainComponent" className="navbar-link" onClick={toggleMenu}>
               Home
             </Link>

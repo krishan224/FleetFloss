@@ -26,7 +26,7 @@ function MainComponent() {
     <div className="main-component">
       <h1>Welcome to FleetFloss Shoe Cleaning!</h1>
       <main>
-        <h2>Our Services</h2>
+        {/* <h2>Our Services</h2> */}
         <div className="services-list">
           <div className="service">
             <img src={dirtyshoe} alt="Before cleaning" />

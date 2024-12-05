@@ -1,41 +1,135 @@
-.footer{
-  display: grid;
-  justify-content: center;
-  position: absolute;
-  gap: 2rem;
-  height: fit-content;
-  padding-top: 3rem;
-  z-index:  -2;
-  overflow: hidden;
-  width: 100%;
-  background-color: #827b7b;
-
-}
-.underComponent{
-  margin-bottom: 3rem;
-  color: rgb(176, 216, 212);
+/* Footer.css */
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 3rem 0;
+  opacity: 0;
+  animation: fadeIn 1s forwards 0.5s;
 }
 
-.footer__heading{
-  margin-left: -20% !important;  
-  
+.footer-container {
+  width: 90%;
+  margin: 0 auto;
 }
-.footer__link{
-  color: rgb(197, 198, 179);
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.facebook{
- color:blue;
-  font-size: 1.6rem;
+
+.footer-section {
+  flex: 1 1 22%;
+  padding: 1rem;
+  opacity: 0;
+  animation: fadeInSection 1s forwards;
 }
-.Xtwitter{
-  color: #312b2b;
+
+.footer__heading {
   font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
-.linkedin{
-  color: skyblue;
-  font-size: 1.6rem;
+
+.footer__list {
+  list-style: none;
+  padding: 0;
 }
-.instagram{
-  color: rgb(137, 42, 42);
-  font-size: 1.6rem;
+
+.footer__link {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  opacity: 0;
+  animation: fadeInLink 1s forwards;
+}
+
+.footer__link:hover {
+  color: #FFD700; /* Hover effect */
+  transition: color 0.3s ease;
+}
+
+/* Social Media Icons */
+.list--social {
+  display: flex;
+  gap: 15px;
+}
+
+.animated-icon {
+  font-size: 1.5rem;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.animated-icon:hover {
+  color: #FFD700;
+  transform: scale(1.2);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Fade-in animation for sections */
+@keyframes fadeInSection {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Fade-in animation for links */
+@keyframes fadeInLink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .footer-container {
+    width: 95%;
+  }
+  .footer-section {
+    flex: 1 1 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    width: 100%;
+  }
+  .footer-section {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    width: 100%;
+  }
+  .footer-section {
+    flex: 1 1 100%;
+    margin-bottom: 1.5rem;
+  }
+  .footer__heading {
+    font-size: 1.2rem;
+  }
+  .footer__link {
+    font-size: 0.9rem;
+  }
 }

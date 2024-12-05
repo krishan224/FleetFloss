@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import logo from '../Images/logo.png'
-import "./Header.css";
+// import "./Header.css";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -20,8 +20,7 @@ const Header = () => {
             <img src={logo} alt="Shoe Cleaning Co." />
           </Link>
           <div className={`navbar-links ${showMenu ? "active" : ""}`}>
-            <Link to="
-            Layout" className="navbar-link" onClick={toggleMenu}>
+            <Link to="Layout" className="navbar-link" onClick={toggleMenu}>
               Home
             </Link>
             <Link to="/aboutUs" className="navbar-link" onClick={toggleMenu}>

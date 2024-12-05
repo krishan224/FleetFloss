@@ -83,7 +83,8 @@ function PlaceOrder() {
   };
 
   return (
-    <form className="place-order-form" onSubmit={handleSubmit}>
+    <div className='place-orderd'>
+      <form className="place-order-form" onSubmit={handleSubmit}>
       <label className="place-order-label">
         Customer Name
         <input
@@ -148,6 +149,7 @@ function PlaceOrder() {
       </label>
       <button className="place-order-button" type="submit">Place Order</button>
     </form>
+  </div>
   );
 }
 
